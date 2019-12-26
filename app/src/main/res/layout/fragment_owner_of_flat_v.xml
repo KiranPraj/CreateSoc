@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VIewpagerEditsoc.OwnerOfFlatVP">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_spinblock"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT BLOCk:-"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spin_ownerblock"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                tools:listitem="@android:layout/activity_list_item">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_spinwing"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT WING:-"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spin_ownerwinig"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                tools:listitem="@android:layout/activity_list_item">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_spinflat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT FLAT:-"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spin_ownerflat"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                tools:listitem="@android:layout/activity_list_item">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="VEHICLE'S DETAIL:-"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_four_wheelar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="FOUR WHEELAR:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_four_wheelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter No."
+                android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_four_whlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_two_wheelar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TWO WHEELAR:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_two_wheelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter No."
+                android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_two_whlr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="OWNER'S DETAIL:-"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_ownername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER NAME:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_ownername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter name"
+                android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_ownerpancard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER PANCARD:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_ownerpancard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Pan number"
+               android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_owneraadharcard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER AADHAR:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_owneraadharcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Aadhar number"
+                android:layout_weight="1"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp"
+
+            >
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER DOB:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                />
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_ownerdob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:hint="DD/MM/YYYY"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_owneraad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER AADRESS:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_owneraad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Address"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_ownermobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER MOBILE NO:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_ownermobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+               android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_ownerlandline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER MOBILE NO:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_ownerlandline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Landline Number"
+                android:inputType="phone"
+                android:layout_weight="1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_owneremail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OWNER EMAIL:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_owneremail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_voting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="VOTING RIGHTS WITH:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_voting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name Of Member"
+
+                android:layout_weight="1"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_meeting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="ATTENDING MEETING AUTHORITY:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_meeting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:hint="Enter Name of Member Who Is Coming For Attainding Meetings"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+
+                android:id="@+id/tv_relativename"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="RELATIVE NAME:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+
+                android:id="@+id/et_relativename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Name"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_relativenumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="RELATIVE NUMBER:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_relativenumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile No"
+                android:inputType="phone"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_relativelandline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="RELATIVE LANDLINE NO:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_relativelandline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Number"
+                android:inputType="phone"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10dp">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_relativeemail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="RELATIVE EMAIL:-"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_relativeemail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+
+                android:textSize="12sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_Saveownerdetails"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/save"
+            android:text="SAVE OWNER INFO"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_stampduty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="STAMP DUTY:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_stampduty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Stamp Duty"
+
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_stampdutydoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_stampdutycam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_registration"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="REGISTRATION:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_registration"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Enter Registration Number"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_registrationdoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_registrationcam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_agreement"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="AGREEMENT:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_agreement"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Agreement Number"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_agreementdoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_agreementcam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_poa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="POA IF ANY:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_poa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_poadoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_poacam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_lone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="LONE IF ANY:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_lone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                    android:hint="Enter Loan Details"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_lonedoc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_lonecam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_sharecertificate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="SHARE CETIFICATE:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_sharecertificate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Enter Certificate Number"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_sharecertificatecreate"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_card_membership_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CREATE"
+                    />
+
+                <Button
+                    android:id="@+id/btn_sharecertificatedownlode"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_file_download_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOWNLODE"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_electric1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="ElECTRIC METER NO 1:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_electric1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Electric Meter No 1"
+
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_electric1doc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_electric1cam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_electric2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="ELECCTRIC METER NO 2:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_electric2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                    android:hint="Enter Electric Meter No 2"
+
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_electric2doc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_electric2cam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_watermeter1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="WATER METER NO 1:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_watermeter1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                    android:hint="Enter Water Meater No 1"
+
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_watermeter1doc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_watermeter1cam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/tv_watermeter2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="WATER METER NO 2:-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.icspl.createsoc.CustomTextField.MyEditText
+                    android:id="@+id/et_watermeter2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Enter Water Meter No 2"
+
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_watermeter2doc"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="DOCUMENTS"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_watermeter2cam"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="CLICK PHOTO"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_Saveownerdocuments"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/save"
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="SAVE DOCUMENTS"
+            android:textColor="#ffffff" />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_istherecoowner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="IS THERE ANY CO-OWNER?"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:layout_gravity="center_vertical"
+              android:entries="@array/Coowner"
+                android:id="@+id/coownerspin"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/noofcoowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btntwo"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="5">
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:id="@+id/tv_wingenter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="ENTER NO OF CO-OWNER :-"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+
+                android:id="@+id/et_entercoownerno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rv_coowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

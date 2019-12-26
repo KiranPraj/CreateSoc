@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.Society_WingActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_wing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+            app:title="Society Wing"
+        >
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:gravity="center"
+            android:text="View Details"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_gravity="center"
+
+        android:gravity="center"
+
+        >
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BlockName"
+            android:gravity="start"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+
+            />
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/block_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BlockNameValue"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:background="@drawable/btntwo"
+           android:layout_marginTop="5dp"
+           android:weightSum="3">
+
+           <com.icspl.createsoc.CustomTextField.MyTextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="WingName"
+               android:gravity="start"
+               android:layout_gravity="center"
+               android:layout_margin="10dp"
+               />
+
+           <androidx.appcompat.widget.AppCompatSpinner
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="2"
+            android:id="@+id/spinner_wing"
+               android:backgroundTint="@color/colorPrimary"
+               >
+           </androidx.appcompat.widget.AppCompatSpinner>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+          android:layout_margin="10dp"
+          >
+
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/recycle_flat"
+              >
+
+          </androidx.recyclerview.widget.RecyclerView>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Co-Owner Name"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Co-Owner Name"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_pancard"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_pancard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_pancard"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_adharcard"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_adharcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_adharcard"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_Dob"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_Dob"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_address"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_address"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_mobileno"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_mobileno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_mobileno"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/owner_text_style"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_email"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/co_owner_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/owner_email"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+<view
+    android:layout_width="match_parent"
+    android:layout_height="2dp">
+    
+</view>
+</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>

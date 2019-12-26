@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/profile_menu"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/society_details_menu"
+            android:icon="@drawable/ic_detailss"
+            android:title="Society Details" />
+        <item
+            android:id="@+id/society_meeting_menu"
+            android:icon="@drawable/society_meeting"
+            android:title="Society Meeting" />
+        <item
+            android:id="@+id/notice_menu"
+            android:icon="@drawable/noticeee"
+            android:title="Notice" />
+
+
+            <item
+                android:id="@+id/election_menu"
+                android:icon="@drawable/ic_event_seat"
+                android:title="Election" />
+            <item
+                android:id="@+id/committee_menu"
+                android:icon="@drawable/commite"
+                android:title="Committee" />
+              <item
+                android:id="@+id/account_mange_menu"
+                android:icon="@drawable/account_manage"
+                android:title="Account Manage" />
+              <item
+                android:id="@+id/complaints_menu"
+                android:icon="@drawable/complaints"
+                android:title="Complaints" />
+
+
+
+</menu>

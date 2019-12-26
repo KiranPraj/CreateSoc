@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.ViewMeeting">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="View Meeting"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:gravity="center"
+            android:text="View Details"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="0dp"
+            android:text="Select Date of meeting"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_viewmeetingdate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:hint="DD/MM/YYYY"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_width="0dp"
+            android:text="Select type of meeting"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:entries="@array/meetintype"
+            android:id="@+id/sp_type"
+            >
+        </androidx.appcompat.widget.AppCompatSpinner>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/save"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000">
+    </View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_ViewMeeting">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.appcompat.widget.LinearLayoutCompat>

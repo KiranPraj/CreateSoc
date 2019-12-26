@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/btntwo">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coownername"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER NAME:-"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coownername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coownerpancard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER PANCARD:-"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coownerpancard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Pan number"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coowneraadharcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER AADHAR:-"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coowneraadharcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Aadhar number"
+            android:layout_weight="1"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp"
+
+        >
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER DOB:-"
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+            />
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coownerdob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:hint="DD/MM/YYYY"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coowneraad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CO-OWNER AADRESS:-"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coowneradd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Address"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coownermobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CO-OWNER MOBILE NO:-"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coownermobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coowneremail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER EMAIL:-"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coowneremail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <com.icspl.createsoc.CustomTextField.MyTextView
+            android:id="@+id/tv_coownerrelation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="CO-OWNER RELATION WITH OWNER:-"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.icspl.createsoc.CustomTextField.MyEditText
+            android:id="@+id/et_coownerrelation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Write The Relation with Owner eg.Father,Son..etc"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Savecoownerdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+       android:layout_marginEnd="25dp"
+        android:background="@drawable/save"
+        android:text="SAVE CO-OWNER DETAILS"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

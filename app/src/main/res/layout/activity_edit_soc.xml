@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.EditSocActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_es"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Edit Society"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow_es"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:id="@+id/tablayout"
+        app:tabGravity="center"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pager">
+
+</androidx.viewpager.widget.ViewPager>
+</LinearLayout>

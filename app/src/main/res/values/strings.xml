@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">CreateSoc</string>
+    <string name="title_activity_homescree">Homescree</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Create Society</string>
+    <string name="nav_header_subtitle">icspl@icsasian.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+   <string-array name="sr_no">
+       <item>Select</item>
+       <item>1</item>
+
+   </string-array>
+    <string-array name="spin">
+        <item>Select user</item>
+        <item> Master Admin </item>
+        <item> Admin </item>
+        <item> Member </item>
+    </string-array>
+    <string-array name="meetintype">
+        <item>Select meeting type</item>
+        <item>Generel</item>
+        <item>Special</item>
+    </string-array>
+    <string-array name="meeting_year">
+        <item>Select</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="Accgroup">
+        <item>Select </item>
+        <item> DIRECT </item>
+        <item> INDIRECT </item>
+
+
+    </string-array>
+    <string-array name="Expence">
+        <item>Select </item>
+        <item> INCONE </item>
+        <item> EXPENCE </item>
+        <item> BOTH </item>
+    </string-array>
+    <string-array name="Billing">
+        <item>Select </item>
+        <item> AREA OF FLAT </item>
+        <item> AREA OF WINGS </item>
+        <item> AREA OF SOCIETY </item>
+        <item> AREA OF BLOCK </item>
+        <item> NO OF OCCUPENTS </item>
+        <item> NO OF FATS </item>
+        <item> LUM SUM/FLAT </item>
+        <item> LUM SUM/WINGS </item>
+        <item> LUM SUM/SOCIETY </item>
+        <item> LUM SUM/BLOCK </item>
+        <item> OTHER (AS PER MINIMUM BILL) </item>
+    </string-array>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    //encoded strings for documents
+    <string name="fa_audio">&#xf1c7;</string>
+    <string name="fa_video">&#xf1c8;</string>
+    <string name="fa_image">&#xf1c5;</string>
+    <string name="fa_word">&#xf1c2;</string>
+    <string name="fa_pdf">&#xf1c1;</string>
+    <string name="fa_excel">&#xf1c3;</string>
+    <string name="fa_ppt">&#xf1c4;</string>
+    <string name="fa_text">&#xf0f6;</string>
+    <string name="fa_zip">&#xf1c6;</string>
+    <string name="fa_download">&#xf019;</string>
+    <string name="attached">Attached</string>
+    <!--download-->
+    <string name="downloadSpeedBytes">%1$d B</string>
+    <string name="downloadSpeedKb">%1$s KB</string>
+    <string name="downloadSpeedMb">%1$s MB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    //file
+    <string name="error_file_executong">Error : while capturing your File</string>
+    <string name="block_name">Block Name</string>
+    <string name="owner_pancard">Pancard No.</string>
+    <string name="owner_adharcard">AdharCard No.</string>
+    <string name="owner_Dob">DoB</string>
+    <string name="owner_address">Address</string>
+    <string name="owner_mobileno">Mobile No.</string>
+    <string name="owner_email">Email</string>
+    <string name="owner_votingrights_with">Voting Rights With</string>
+    <string name="owner_attendingmeeting_authority">Attending Meeting Authorirty</string>
+    <string name="owner_relativename">Relative Name</string>
+    <string name="owner_relativenumber">Relative No.</string>
+    <string name="owner_relativel_landline">Relative LandLine</string>
+    <string name="owner_relative_email">Relative Email</string>
+    <string name="owner_relative_otherdetails">Relative OtherDetails</string>
+    <string name="action_owner_moredetails">Documents</string>
+    <string name="action_coOwner_moredetails">Co-Owners</string>
+    <string name="action_Owner_details">Owner Details</string>
+
+
+    <string-array name="Coowner">
+        <item>Select </item>
+        <item> YES </item>
+        <item> NO </item>
+
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activitys.ViewsocActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="View Society"
+        android:background="@color/colorPrimary" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/ic_arrow_back"
+           android:gravity="center"
+            android:text="View Details"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/societyImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/societyphoto" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:paddingLeft="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                >
+
+
+                <LinearLayout
+
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="SOCIETY NAME-:"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:id="@+id/tv_scname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="xyz"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="SOCIETY ADDRESS:-"
+
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:id="@+id/tv_scadd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="xyz"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ADMIN NAME:-"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:id="@+id/tv_adminname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="xyz"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ADMIN EMAIL:-"
+
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:id="@+id/tv_adminemail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="xyz"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ADMIN MOBILE NO:-"
+
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <com.icspl.createsoc.CustomTextField.MyTextView
+                        android:id="@+id/tv_adminmobileno"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="phone"
+                        android:text="xyz"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_profile"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/view_more"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/society_profile" />
+
+                        <com.icspl.createsoc.CustomTextField.MyTextView
+                            android:id="@+id/textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Profile"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_society_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Society_details"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/block" />
+
+                        <com.icspl.createsoc.CustomTextField.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Society Details"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
+

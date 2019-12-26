@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activitys.AccountManage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        app:title="Account Manage"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow_a"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:drawableLeft="@drawable/edit"
+        android:id="@+id/btn_oldbill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btntwo"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="EDIT OLD BILL"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        />
+
+    <Button
+        android:drawableLeft="@drawable/ic_note_add_black_24dp"
+        android:id="@+id/btn_newBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/btntwo"
+        android:text="ADD NEW BILL"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+
+
+        />
+
+</LinearLayout>

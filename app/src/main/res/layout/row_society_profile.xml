@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutrv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/btntwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/rvtv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter title"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
+                <com.icspl.createsoc.CustomTextField.MyTextView
+                    android:id="@+id/rvtv_Value"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Value"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/rvbtn_file"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn3"
+                    android:layout_weight="1"
+                    android:text="View Documents"
+                    android:paddingLeft="10dp"
+
+                    />
+
+                <Button
+                    android:id="@+id/rvbtn_cam"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn3"
+                    android:layout_weight="1"
+                    android:text="View Photo"
+                    android:paddingLeft="10dp"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

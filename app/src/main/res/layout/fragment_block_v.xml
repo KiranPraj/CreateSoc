@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".VIewpagerEditsoc.BlockVP">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/btntwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+              android:weightSum="5">
+<com.icspl.createsoc.CustomTextField.MyTextView
+    android:id="@+id/tv_bolockenter"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:text="ENTER NO OF BLOCKS :-"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    />
+    <com.icspl.createsoc.CustomTextField.MyEditText
+        android:id="@+id/et_enterblocks"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:inputType="phone"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvBlock"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+<Button
+    android:layout_marginTop="10dp"
+    android:id="@+id/btn_Savedetails"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="SAVE"
+    android:textColor="#ffffff"
+    android:background="@drawable/save"
+    />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

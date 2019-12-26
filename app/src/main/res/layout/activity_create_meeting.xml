@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Create Meeting"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:gravity="center"
+
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/back_arrow"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activitys.CreateMeeting">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="NO OF MEETINGS IN YEAR:-"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <EditText
+            android:id="@+id/et_nogeneral"
+            android:layout_width="0dp"
+            android:hint="Eg.1,etc."
+            android:inputType="phone"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meetingtype"
+        android:entries="@array/meetintype"
+        >
+
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_genmeeting"
+        android:layout_marginBottom="10dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/btn_generalsave"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/save"
+        android:text="SAVE"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000000"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000000"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="5">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="4"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="NO OF SPECIAL GENERAL BODY MEETINGS IN YEAR:-"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="#000000"-->
+            <!--/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/et_nospetial"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:hint="Eg.1,etc."-->
+            <!--android:inputType="phone"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000000"-->
+        <!--/>-->
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/rv_spetialmeeting"-->
+        <!--android:layout_marginBottom="10dp">-->
+
+
+    <!--</androidx.recyclerview.widget.RecyclerView>-->
+    <!--<Button-->
+        <!--android:id="@+id/btn_spetialsave"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/save"-->
+        <!--android:text="SAVE"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

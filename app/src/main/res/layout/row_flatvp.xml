@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/btntwo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FLAT NAME:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_flatname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER FLAT NAME"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FLAT NUMBER:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_flatkno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:hint="ENTER FLAT NO"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO OF OCCUPANTS:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_noofoccupents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="ENTER NUMBER OF OCCUPENTS"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUILD UP AREA:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_builuparea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="ENTER BUILDUP AREA"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.icspl.createsoc.CustomTextField.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARPET AREA:-"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.icspl.createsoc.CustomTextField.MyEditText
+                android:id="@+id/et_carpetarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:hint="ENTER CARPET AREA "
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

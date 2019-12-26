@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.icspl.createsoc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:networkSecurityConfig="@xml/networks_security_config"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.icspl.createsoc.Activitys.Society_FlatActivity"></activity>
+        <activity android:name="com.icspl.createsoc.Activitys.Society_WingActivity" />
+        <activity android:name="com.icspl.createsoc.Activitys.SocietyProfile" />
+        <activity android:name="com.icspl.createsoc.Activitys.Society_BlockActivity" />
+        <activity android:name=".Activitys.Society_ProfileActivity" />
+        <activity android:name="com.icspl.createsoc.Activitys.Complaints" />
+        <activity android:name="com.icspl.createsoc.Activitys.AddBill" />
+        <activity android:name="com.icspl.createsoc.Activitys.Meetings" />
+        <activity android:name="com.icspl.createsoc.Activitys.CreateMeeting" />
+        <activity android:name="com.icspl.createsoc.Activitys.EditBill" />
+        <activity android:name="com.icspl.createsoc.Activitys.AccountManage" />
+        <activity android:name="com.icspl.createsoc.Activitys.ViewsocActivity" />
+        <activity android:name="com.icspl.createsoc.Activitys.EditSocActivity" />
+        <activity
+            android:name="com.icspl.createsoc.Activitys.Society_Details" >
+        </activity>
+        <activity
+            android:name="com.icspl.createsoc.Activitys.Homescreen"
+            android:label="@string/title_activity_homescree"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.icspl.createsoc.Activitys.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.icspl.createsoc.Activitys.ViewMeeting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.icspl.createsoc.Activitys.loginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.icspl.createsoc.Activitys.CreateCommittee" />
+        <activity android:name="com.icspl.createsoc.Activitys.Committee" />
+        <activity android:name="com.icspl.createsoc.Activitys.Notice" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+    </application>
+
+</manifest>
